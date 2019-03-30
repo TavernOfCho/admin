@@ -7,7 +7,7 @@ WORKDIR /usr/src/admin
 # Prevent the reinstallation of node modules at every changes in the source code
 COPY package.json yarn.lock ./
 
-RUN yarn global add create-react-app react-scripts
+RUN yarn global add react-router-redux
 
 RUN apk add --no-cache --virtual .gyp \
         python \
